@@ -13,7 +13,7 @@ class ProductController extends BaseController
 
     public function product()
     {
-        echo 'working';
+        return view('product');
     }
 
     public function products($product)
