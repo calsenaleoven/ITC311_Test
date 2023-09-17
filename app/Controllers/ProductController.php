@@ -10,4 +10,14 @@ class ProductController extends BaseController
     {
         //
     }
+
+    public function product()
+    {
+        echo 'working';
+    }
+
+    public function products($product)
+    {
+        echo $product;
+    }
 }
