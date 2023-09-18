@@ -39,4 +39,11 @@ class ProductController extends BaseController
         $this->product->save($data);
         return redirect()->to('/product');
     }
+
+    public function delete($id)
+    {
+        $this->product->delete($id);
+        return redirect()->to('/product');
+
+    }
 }
