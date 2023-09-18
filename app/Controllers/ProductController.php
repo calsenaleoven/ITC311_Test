@@ -14,9 +14,8 @@ class ProductController extends BaseController
 
     public function product()
     {
-        $data = $this->product->findAll();
-        echo '<pre>';
-        print_r($data);
+        $data ['product'] = $this->product->findAll();
+        return view('product', $data);
     }
 
     public function products($product)
